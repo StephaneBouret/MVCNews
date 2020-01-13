@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col"></div>
+    <div class="col mb-5">
+        <h1 class="text-center py-4">Se connecter</h1>
+        {success}
+        <form action="index.php?controller=security&action=login" method="POST">
+            <div class="form-group">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" class="form-control">
+            </div>
+            <div id="formFooter">
+                <a class="underlineHover" href="index.php?controller=security&action=formForget">Mot de passe oublié ?</a>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Connexion</button>
+        </form>
+    </div>
+    <div class="col"></div>
+</div>

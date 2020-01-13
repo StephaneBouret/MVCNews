@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.php?controller=new">Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+        aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link {activeNew}" href="index.php?controller=new">News <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <!-- {optionAuth} -->
+            <li class="nav-item">
+                {listCat}
+            </li>
+            <li class="nav-item">
+                {listUser}
+            </li>
+        </ul>
+        <ul class="navbar-nav my-lg-0">
+            <li class="nav-item">
+                <button type="button" class="btn btn-info btn-sm">
+                    {optionConnect}
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+
+    <body class="d-flex flex-column h-100">
+        <!-- <nav>
+    <ul>
+        <li>
+            <a href="index.php?controller=new">News</a>
+            <a href="index.php?controller=category">Category</a>
+        </li>
+    </ul>
+</nav> -->

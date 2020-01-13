@@ -1,0 +1,65 @@
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-md-0 mb-5">
+            <form action="index.php?controller=new&action={action}" method="POST" enctype="multipart/form-data">
+
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="id" class="">Id :</label>
+                            <input type="text" id="id" name="id" value="{id}" readonly class="form-control">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="titre" class="">Titre :</label>
+                            <input type="text" id="titre" name="titre" value="{titre}" class="form-control">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for='description'>Description:</label>
+                            <textarea id="description" name="description" class="form-control" cols="30" rows="15">{description}</textarea>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!-- <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="description" class="">Description :</label>
+                            <input type="text" id="description" name="description" value="{description}"
+                                class="form-control">
+                        </div>
+                    </div> -->
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="category" class="">Catégorie :</label>
+                            <select id="category" name="category" class="form-control">
+                                <option></option>
+                                {categories}
+                            </select>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="photo">Photo:</label>
+                            <img src='{photo}' class="mt-2 mb-2" />
+                            <input type="file" class="form-control-file" id="photo" name="photo" aria-describedby="nom"
+                                placeholder="Photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-md-left mt-3 mb-5">
+                    <input class="btn btn-primary" type="submit" value="Valider">
+                </div>
+            </form>
+        </div>
+        <!--Grid column-->
+
+    </div>
